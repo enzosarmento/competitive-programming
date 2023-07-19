@@ -13,12 +13,12 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
-bool binarySearch(vector list, int start, int end) {
+bool binarySearch(vector<int> list, int start, int end) {
   int middle = (start + end) / 2;
 }
 
 int main() { _;
 
-
+  cout << "teste";
   return 0;
 }

@@ -13,16 +13,16 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
-void mergeSort(vector list, int start, int end) {
+void mergeSort(vector<int> list, int start, int end) {
   if(end - start > 1) {
-    int (middle = end + start) / 2;
+    int middle = (end + start) / 2;
     mergeSort(list, start, middle);
     mergeSort(list, end, middle);
     merge(list, start, middle, end);
   }
 }
 
-void merge(vector list, int start, int middle, int end) {
+void merge(vector<int> list, int start, int middle, int end) {
   
 }
 
