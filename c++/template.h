@@ -1,3 +1,5 @@
+#ifndef TEMPLATE_H
+#define TEMPLATE_H
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -13,18 +15,10 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
-int main() { _;
+int main() {
 
-  int m; int a; int b; cin >> m >> a >> b;
 
-  int c = m - (a + b);
-
-  if(a > b && a > c)
-    cout << a << endl;
-  else if(b > a && b > c)
-    cout << b << endl;
-  else if(c > a && c > b)
-    cout << c << endl;
-    
   return 0;
 }
+
+#endif

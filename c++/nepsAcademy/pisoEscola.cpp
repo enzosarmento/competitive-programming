@@ -13,18 +13,14 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
-int main() { _;
+int main() {
 
-  int m; int a; int b; cin >> m >> a >> b;
+  int L, C, t1, t2; cin >> L >> C;
+  
+  t1 = (L * C) + ((L - 1) * (C - 1));
+  t2 = (2 * (L - 1) + (2 * (C - 1)));
 
-  int c = m - (a + b);
+  cout << t1 << endl << t2 << endl;
 
-  if(a > b && a > c)
-    cout << a << endl;
-  else if(b > a && b > c)
-    cout << b << endl;
-  else if(c > a && c > b)
-    cout << c << endl;
-    
   return 0;
 }

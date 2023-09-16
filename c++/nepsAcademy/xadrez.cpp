@@ -15,16 +15,12 @@ const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
 int main() { _;
 
-  int m; int a; int b; cin >> m >> a >> b;
+  int l, c; cin >> l >> c;
 
-  int c = m - (a + b);
+  if((l + c) % 2 == 0)
+    cout << 1 << endl;
+  else
+    cout << 0 << endl;
 
-  if(a > b && a > c)
-    cout << a << endl;
-  else if(b > a && b > c)
-    cout << b << endl;
-  else if(c > a && c > b)
-    cout << c << endl;
-    
   return 0;
 }

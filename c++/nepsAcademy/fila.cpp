@@ -16,26 +16,25 @@ const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 int main() { _;
 
   int n; cin >> n;
-  vector<int> v(n);
+  vector<int> v;
 
-  for(int i = 0; i < n; i++)
-    cin >> v[i];
-  
   for(int i = 0; i < n; i++) {
-    if(v[i] == -1)
-      v[i] = 10;
+    int a; cin >> a;
+    v.push_back(a);
   }
 
-  for(int i = 1; i < n; i++)
-    v[i] = min({v[i], v[i - 1] + 1, 9});
+  int k; cin >> k;
 
-  for(int i = n - 2; i > -1; i--)
-    v[i] = min({v[i], v[i + 1] + 1, 9});
+  for(int i = 0; i < k; i++) {
+    int remove; cin >> remove;
+    auto temp = find(v.begin(), v.end(), remove);
+    v.erase(temp);
+  }
 
-  for(int x : v)
-    cout << x << " ";
-    
+  for(int num : v)
+    cout << num << " ";
+
   cout << endl;
-
+  
   return 0;
 }

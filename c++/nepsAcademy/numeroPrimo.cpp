@@ -13,18 +13,30 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
+bool eh_primo(int x) {
+	int cont = 0;
+
+  for(int i = 1; i <= x; i++) {
+    if(x % i == 0) {
+      cont++;
+    }
+  }
+
+  if(cont == 2)
+    return true;
+  else
+    return false;
+}
+
 int main() { _;
 
-  int m; int a; int b; cin >> m >> a >> b;
+  int x; cin >> x;
 
-  int c = m - (a + b);
+	if(eh_primo(x)) {
+		cout << "S" << "\n";
+	}else {
+		cout << "N" << "\n";
+	}
 
-  if(a > b && a > c)
-    cout << a << endl;
-  else if(b > a && b > c)
-    cout << b << endl;
-  else if(c > a && c > b)
-    cout << c << endl;
-    
   return 0;
 }

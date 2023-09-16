@@ -15,27 +15,26 @@ const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
 int main() { _;
 
-  int n; cin >> n;
-  vector<int> v(n);
+  int n, a; cin >> n;
+  vector<pair<int, int>> v(10);
 
-  for(int i = 0; i < n; i++)
-    cin >> v[i];
-  
-  for(int i = 0; i < n; i++) {
-    if(v[i] == -1)
-      v[i] = 10;
+  for(int i = 0; i < 10; i++) {
+    v[i].f = i;
+    v[i].s = 0;
   }
 
-  for(int i = 1; i < n; i++)
-    v[i] = min({v[i], v[i - 1] + 1, 9});
+  for(int i = 0; i < n; i++) {
+    cin >> a;
+    while(a > 0) {
+      int digito = a % 10;
+      v[digito].second++;
 
-  for(int i = n - 2; i > -1; i--)
-    v[i] = min({v[i], v[i + 1] + 1, 9});
-
-  for(int x : v)
-    cout << x << " ";
+      a /= 10;
+    }
+  }
     
-  cout << endl;
+  for(int i = 0; i < v.size(); i++)
+    cout << v[i].f << " - " << v[i].s << endl; 
 
   return 0;
 }

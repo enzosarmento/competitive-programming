@@ -13,8 +13,22 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
+int soma_vetor(int n, int v[]) { 
+	int sum = 0;
+
+	for(int i = 0; i < n; i++)
+		sum += v[i];
+
+	return sum;
+}
+
 int main() { _;
+	
+	int n, v[100100];
+	cin >> n;
+	
+	for(int i=0;i<n;i++)
+		cin >> v[i];
 
-
-  return 0;
+	cout << soma_vetor(n,v) << "\n";
 }
