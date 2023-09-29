@@ -13,8 +13,31 @@ typedef long long ll;
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
-int main() {
+string title(string f) {
+	for(int i = 0; i < f.size(); i++) {
+		if(isupper(f[i]))
+			f[i] -= 'A';
+		else
+			f[i] -= 'a';
+	}
 
+	f[0] += 'A';
 
-  return 0;
+	for(int i = 1; i < f.size(); i++) {
+		int t = f[i - 1];
+		if(t == 32)
+			f[i] += 'A';
+		else
+			f[i] += 'a';
+	}
+
+	return f;
+}
+
+int main() { _;
+	string f;
+
+	getline(cin, f);
+		
+	cout << title(f) << "\n";
 }
