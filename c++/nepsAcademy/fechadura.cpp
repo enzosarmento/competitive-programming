@@ -17,26 +17,23 @@ int main() { _;
 
   int n, m, ans = 0; cin >> n >> m;
   vector<int> v(n);
-  vector<int> s;
-  vector<int> t;
 
   for(int i = 0; i < n; i++)
     cin >> v[i];
 
-  sort(v.begin(), v.end());
-
   for(int i = 0; i < n; i++) {
-    if(v[i] < m) {
-      s[i] = v[i];
-      v[i] = 0;
-    } else if(v[i] > m) {
-      t[i] = v[i];
-      v[i] = 0;
+    if(v[i] != m) {
+      int vezes = abs(m - v[i]);
+      if(v[i] < m) {
+        v[i] += vezes;
+        v[i + 1] += vezes;
+        ans += vezes;
+      } else {
+        v[i] -= vezes;
+        v[i + 1] -= vezes;
+        ans += vezes;
+      }
     }
-  }
-
-  for(int i = 0; i < n; i++) {
-    
   }
 
   cout << ans << endl;
