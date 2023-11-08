@@ -51,13 +51,24 @@ int main() { _;
       if(str[j] == '(' || str[j] == '[' || str[j] == '{') {
         p.push(str[j]);
       } else {
-        if(makePair(str[j], p.top()) == 0) {
-          cout << 'N' << endl;
-        }        
+        if(!p.empty()) {
+          if(makePair(str[j], p.top()) != 0) {
+            p.pop();
+          }
+        } else {
+          p.push(str[j]);
+        }
       }
     }
+    if(p.empty())
+      cout << 'S' << endl;
+    else {
+      while (!p.empty())
+        {
+          p.pop();
+        }
+      cout << 'N' << endl;
+    }
   }
-
-
   return 0;
 }

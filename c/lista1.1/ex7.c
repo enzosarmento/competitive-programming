@@ -3,7 +3,7 @@
 int main() {
 
   int n;
-  double s = 0.0;
+  double pi = 0.0;
   scanf("%d", &n);
 
   if(n > 0) {
@@ -19,9 +19,9 @@ int main() {
       i++;
     }
 
-    s *= 4;
+    pi *= 4;
     
-    printf("%lf\n", s);
+    printf("%lf\n", pi);
   }
   
   return 0;

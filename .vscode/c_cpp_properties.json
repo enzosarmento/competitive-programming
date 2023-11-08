@@ -11,7 +11,8 @@
                 "_UNICODE"
             ],
             "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
-            "intelliSenseMode": "${default}"
+            "intelliSenseMode": "${default}",
+            "cStandard": "c99"
         }
     ],
     "version": 4
