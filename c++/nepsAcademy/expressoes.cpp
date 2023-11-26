@@ -52,7 +52,9 @@ int main() { _;
         p.push(str[j]);
       } else {
         if(!p.empty()) {
-          if(makePair(str[j], p.top()) != 0) {
+          if(makePair(str[j], p.top()) == 0) {
+            break;
+          } else {
             p.pop();
           }
         } else {

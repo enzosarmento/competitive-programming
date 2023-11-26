@@ -15,8 +15,16 @@ const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
 int main() { _;
 
-  
+  int n, i = 0;
+  do {
+    cin >> n;
+    i++;
 
+    if(n != 0)
+      cout << "Teste " << i << endl << (1ll << n) - 1 << endl << endl;
+
+  } while(n != 0);
+  
 
   return 0;
 }
