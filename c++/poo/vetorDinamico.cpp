@@ -31,7 +31,10 @@ class MyDynamicVector {
     }
 
     T operator [](int index) {
-      return this->memory[index];
+      if(index < this->t)
+        return this->memory[index];
+
+      throw out_of_range("Index out of range!");
     }
 
     void add(T x) {

@@ -17,18 +17,13 @@ int main() { _;
 
   int n; int a; int t = 0; int d = 0; cin >> n;
 
-  for(int i = 0; i < n; i++) {
+  for(int i = 1; i <= n; i++) {
     cin >> a;
     t += a;
 
-    if (t < 1000000)
-    {
-      d++;
-    }
+    if (t >= 1000000 && d == 0)
+      d = i;
   }
-
-  if(t >= 1000000)
-    d++;
 
   cout << d << endl;
 
