@@ -1,1 +1,7 @@
 venv
+
+### IntelliJ IDEA ###
+kotlin/out/
+kotlin/!**/src/main/**/out/
+kotlin/!**/src/test/**/out/
+
