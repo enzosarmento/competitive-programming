@@ -1,7 +1,5 @@
 #include "template.h"
 
-const double INF = 1e18;
-
 struct Point {
   double x, y;
 };
