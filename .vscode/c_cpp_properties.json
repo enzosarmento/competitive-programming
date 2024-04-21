@@ -10,7 +10,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "/usr/bin/g++",
+            "compilerPath": "C:\\MinGW\\bin\\g++",
             "intelliSenseMode": "${default}",
             "cStandard": "c99"
         }
