@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8efee1d0-31d9-4ba5-88e2-7b69a430d54c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../golang/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/dois_vetores_pares_impares.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/ordenacao_tres_numeros.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/plantacao_de_morangos.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/soma_linhas_matriz.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/tomadas.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.vscode/c_cpp_properties.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/c_cpp_properties.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/andando_no_tempo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/multiplos.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../golang/neps_academy/teleferico.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../golang/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../golang/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
