@@ -1,10 +1,10 @@
-package neps_academy
+package main
 
 import (
 	"fmt"
 )
 
-func DoisVetoresParesImpares() {
+func main() {
 	var pair []interface{}
 	var odd []interface{}
 

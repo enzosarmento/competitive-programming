@@ -1,8 +1,8 @@
-package neps_academy
+package main
 
 import "fmt"
 
-func SomaLinhasMatriz() {
+func main() {
 	var m [3][3]int
 
 	var number int

@@ -1,8 +1,8 @@
-package neps_academy
+package main
 
 import "fmt"
 
-func PlantacaoDeMorangos() {
+func main() {
 	var lengh, width, possibleLengh, possibleWidth int
 
 	fmt.Scan(&lengh)

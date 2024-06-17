@@ -1,8 +1,8 @@
-package neps_academy
+package main
 
 import "fmt"
 
-func Multiplos() {
+func main() {
 	var n, number int
 	fmt.Scan(&n)
 

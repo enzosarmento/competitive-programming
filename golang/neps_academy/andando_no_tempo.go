@@ -1,11 +1,11 @@
-package neps_academy
+package main
 
 import (
 	"fmt"
 	"sort"
 )
 
-func AndandoNoTempo() {
+func main() {
 	var arr []int
 
 	var number int

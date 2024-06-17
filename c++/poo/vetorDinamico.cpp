@@ -72,7 +72,7 @@ class MyDynamicVector {
       }
     }
 
-    int size() { return this-> t; }
+    int size() { return this->t; }
 };
 
 int main() { _;

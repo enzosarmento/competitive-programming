@@ -1,11 +1,11 @@
-package neps_academy
+package main
 
 import (
 	"fmt"
 	"sort"
 )
 
-func OrdenacaoTresNumeros() {
+func main() {
 	var numbers []int
 
 	var number int

@@ -1,7 +1,7 @@
 package main
 
-import "golang/neps_academy"
+import "fmt"
 
 func main() {
-	neps_academy.Teleferico()
+	fmt.Println("Hello World!")
 }

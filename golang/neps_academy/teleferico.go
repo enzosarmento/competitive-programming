@@ -1,8 +1,8 @@
-package neps_academy
+package main
 
 import "fmt"
 
-func Teleferico() {
+func main() {
 	var c, a int
 	fmt.Scan(&c)
 	fmt.Scan(&a)
