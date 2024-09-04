@@ -1,14 +1,15 @@
-output: template.o main.o
-	g++ -o funcaoPrimo template.o main.o
+CXXFLAGS = -c -g -O0 -std=c++11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow
 
-template.o: template.h
-	g++ -c template.h
+all: main
 
-main.o: funcaoPrimo.cpp
-	g++ -c funcaoPrimo.cpp
+main: program.o
+	g++ program.o -o main
+
+program.o: funcaoPrimo.cpp template.h
+	g++ $(CXXFLAGS) funcaoPrimo.cpp -o program.o
 
 clean:
-	rm *.o funcaoPrimo
+	rm *.o main
 
 run:
-	./funcaoPrimo
+	./main
