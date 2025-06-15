@@ -1,4 +1,4 @@
-package codeforces
+package codeforces.rating800
 
 fun main() {
     val str1 = readln().lowercase()

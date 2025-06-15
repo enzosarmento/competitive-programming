@@ -1,4 +1,4 @@
-package codeforces
+package codeforces.rating800
 
 fun main() {
     val word = readln()
